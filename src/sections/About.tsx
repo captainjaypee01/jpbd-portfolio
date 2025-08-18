@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Separator } from '@/components/ui/separator'
-import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 
 function useCounter(target: number, durationMs = 1500) {
     const [val, setVal] = useState(0)

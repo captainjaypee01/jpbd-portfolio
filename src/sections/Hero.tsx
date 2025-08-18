@@ -3,6 +3,8 @@ import { Github, Linkedin, Download } from 'lucide-react'
 import { Typewriter } from '@/components/animations/Typewriter'
 import { GITHUB, LINKEDIN } from '@/lib/utils'
 import { motion } from 'motion/react'
+import { GlowEffect } from '@/components/ui/glow-effect'
+import { TextEffect } from '@/components/ui/text-effect'
 
 export function Hero() {
     return (
@@ -16,13 +18,31 @@ export function Hero() {
                     <p className="text-sm text-neutral-400">Hello, I am</p>
                     <h1 className="mt-2 text-4xl md:text-6xl font-bold tracking-tight">John Paul Dala</h1>
                     <p className="mt-3 text-xl text-neutral-300">
+
+                        <TextEffect delay={1.2} per='char' preset='fade'>
+                            Senior Software Engineer — Full-Stack & IoT
+                        </TextEffect>
                         <Typewriter text="Senior Software Engineer — Full-Stack & IoT" />
                     </p>
                     <p className="mt-5 text-neutral-300 max-w-prose">
                         Building robust web & IoT platforms with React, Laravel, and Python — and deploying securely to Azure with CI/CD.
                     </p>
                     <div className="mt-7 flex flex-wrap gap-3">
-                        <a href="#projects" className="btn btn-primary"><span>View Projects</span></a>
+                        <div className='relative'>
+                            <GlowEffect
+                                colors={['#FF5733', '#33FF57', '#3357FF', '#F1C40F']}
+                                mode="flowHorizontal"
+                                blur="strong"
+                                duration={3}
+                                scale={0.9}
+                                className="rounded-md"
+                            />
+                            <Button size="lg">
+                                <a href="#projects" aria-label="View Projects">View Projects</a>
+                            </Button>
+                            {/* <a href="#projects" className="relative inline-flex items-center gap-1 rounded-md bg-zinc-950 px-2.5 py-1.5 text-sm text-zinc-50 outline outline-1 outline-[#fff2f21f]"><span>View Projects</span></a> */}
+                        </div>
+                        
                         <a href="/Resume.pdf" download className="btn btn-outline"><Download className="size-4" />Download Resume</a>
                         <a className="btn btn-outline" href={GITHUB} target="_blank" rel="noreferrer"><Github className="size-4" />GitHub</a>
                         <a className="btn btn-outline" href={LINKEDIN} target="_blank" rel="noreferrer"><Linkedin className="size-4" />LinkedIn</a>

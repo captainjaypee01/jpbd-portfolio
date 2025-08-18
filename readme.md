@@ -69,7 +69,7 @@ npm run dev
 **Assets to add:**
 
 - `public/Resume.pdf` (your latest resume)
-- `public/headshot.png` (profile photo)
+- `public/headshot.JPG` (profile photo)
 
 ---
 
@@ -79,7 +79,7 @@ npm run dev
 portfolio/
 ├── public/
 │   ├── Resume.pdf           # Downloaded via Hero/Footer
-│   └── headshot.png         # Hero headshot
+│   └── headshot.JPG         # Hero headshot
 ├── src/
 │   ├── components/
 │   │   ├── ui/              # shadcn-style primitives (Button, Card, ...)
@@ -358,7 +358,7 @@ jobs:
 
 **Headshot not visible**
 
-- Ensure `public/headshot.png` exists
+- Ensure `public/headshot.JPG` exists
 
 ---
 

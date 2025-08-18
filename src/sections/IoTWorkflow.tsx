@@ -1,5 +1,5 @@
 // src/sections/IoTWorkflow.tsx
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { motion, useAnimation } from 'motion/react'
 import { Thermometer, Activity, Radio } from 'lucide-react'
@@ -95,7 +95,7 @@ export function IoTWorkflow() {
 
     const phaseColor = {
         idle: 'bg-neutral-700 text-neutral-200',
-        sending: 'bg-primary/20 text-primary',
+        sending: 'bg-primary/20 text-white',
         device: 'bg-amber-500/20 text-amber-300',
         returning: 'bg-emerald-500/20 text-emerald-300',
         done: 'bg-emerald-600/20 text-emerald-200'
