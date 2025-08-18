@@ -10,7 +10,9 @@ export function EducationCerts() {
                 </div>
                 <div className="card p-5">
                     <h3 className="font-semibold">Certifications</h3>
-                    <p className="text-sm text-neutral-400">Microsoft Technology Associate for Introduction to programming using Javascript.</p>
+                    <a href="https://www.certiport.com/portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=396&cvid=zc/QsK8odTkVfnzkhNVp5Q==" target="_blank">
+                        <p className="text-sm text-neutral-400">Microsoft Technology Associate for Introduction to programming using Javascript.</p>
+                    </a>
                 </div>
             </div>
         </section>
