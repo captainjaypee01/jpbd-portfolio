@@ -26,7 +26,7 @@ export function Skills() {
                             <div className="font-medium">{s.name}</div>
                             <div className="text-xs text-neutral-400">{s.level ?? 0}%</div>
                         </div>
-                        <div className="mt-3"><Progress value={s.level ?? 0} /></div>
+                        <div className="mt-3 bg-black"><Progress value={s.level ?? 0} className=''/></div>
                     </div>
                 ))}
             </div>
