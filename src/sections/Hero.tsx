@@ -26,16 +26,16 @@ export function Hero() {
                         Building robust web & IoT platforms with React, Laravel, and Python — and deploying securely to Azure with CI/CD.
                     </p>
                     <div className="mt-7 flex flex-wrap gap-3">
-                        <Button size="lg" variant="outline" className='bg-black'>
+                        <Button size="lg" className=''>
                             <a href="#projects" aria-label="View Projects">View Projects</a>
                         </Button>
-                        <Button size="lg" variant="outline" className='bg-black inline-flex'>
+                        <Button size="lg" className='inline-flex'>
                             <a className="inline-flex gap-2" href="/Resume.pdf" download target="_blank" rel="noreferrer"> <Download />Download Resume </a>
                         </Button>
-                        <Button size="lg" variant="outline" className='bg-black inline-flex'>
+                        <Button size="lg" className='inline-flex'>
                             <a className="inline-flex gap-2" href={GITHUB} target="_blank" rel="noreferrer"><Github className="size-4" />Github</a>
                         </Button>
-                        <Button size="lg" variant="outline" className='bg-black inline-flex'>
+                        <Button size="lg" className='inline-flex'>
                             <a className="inline-flex gap-2" href={LINKEDIN} target="_blank" rel="noreferrer"><Linkedin className="size-4" />LinkedIn</a>
                         </Button>
                     </div>
