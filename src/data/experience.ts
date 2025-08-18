@@ -17,7 +17,7 @@ export const experience: Experience[] = [
             'Implemented secure Azure cloud architecture incl. firewalls & ExpressRoute.',
             'Conducted VAPT, fixed vulnerabilities, and reinforced security practices.',
             'Engineered full-stack IoT solutions: Python device comms, Laravel APIs, React dashboards.',
-            'Enabled real-time analytics and alerts across 50+ industrial devices (scalable to thousands).',
+            'Enabled real-time analytics and alerts across thousands of industrial devices.',
             'Drove SOLID, TDD (Pest PHP), and clean code adoption across the team.',
             'Maintained company-wide ERP (C# .NET) ensuring stability and integrations.'
         ]
