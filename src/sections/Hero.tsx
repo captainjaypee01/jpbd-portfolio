@@ -1,6 +1,5 @@
 import { Button } from '@/components/ui/button'
 import { Github, Linkedin, Download } from 'lucide-react'
-import { Typewriter } from '@/components/animations/Typewriter'
 import { GITHUB, LINKEDIN } from '@/lib/utils'
 import { motion } from 'motion/react'
 import { TextEffect } from '@/components/ui/text-effect'
@@ -18,10 +17,10 @@ export function Hero() {
                     <h1 className="mt-2 text-4xl md:text-6xl font-bold tracking-tight">John Paul Dala</h1>
                     <p className="mt-3 text-xl text-neutral-300">
 
-                        <TextEffect delay={1.2} per='char' preset='fade'>
+                        <TextEffect delay={0.4} per='char' preset='fade'>
                             Senior Software Engineer — Full-Stack & IoT
                         </TextEffect>
-                        <Typewriter text="Senior Software Engineer — Full-Stack & IoT" />
+                        {/* <Typewriter text="Senior Software Engineer — Full-Stack & IoT" /> */}
                     </p>
                     <p className="mt-5 text-neutral-300 max-w-prose">
                         Building robust web & IoT platforms with React, Laravel, and Python — and deploying securely to Azure with CI/CD.
@@ -31,7 +30,7 @@ export function Hero() {
                             <a href="#projects" aria-label="View Projects">View Projects</a>
                         </Button>
                         <Button size="lg" variant="outline" className='bg-black inline-flex'>
-                            <Download />Download Resume
+                            <a className="inline-flex gap-2" href="/Resume.pdf" download target="_blank" rel="noreferrer"> <Download />Download Resume </a>
                         </Button>
                         <Button size="lg" variant="outline" className='bg-black inline-flex'>
                             <a className="inline-flex gap-2" href={GITHUB} target="_blank" rel="noreferrer"><Github className="size-4" />Github</a>
