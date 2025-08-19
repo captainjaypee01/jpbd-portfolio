@@ -2,6 +2,7 @@ import { projects } from '@/data/projects'
 import { Badge } from '@/components/ui/badge'
 import { motion } from 'motion/react'
 import { useMemo, useState } from 'react'
+import { Button } from '@/components/ui/button'
 
 const tags = Array.from(new Set(projects.flatMap(p => p.tech)))
 
@@ -13,9 +14,9 @@ export function Projects() {
             <div className="flex items-center justify-between flex-wrap gap-4">
                 <h2 className="text-2xl font-semibold">Projects</h2>
                 <div className="flex gap-2 overflow-x-auto pb-2">
-                    <button className={`badge ${active === 'All' ? 'bg-primary-600/20 text-primary-200 border-primary-600/40' : ''}`} onClick={() => setActive('All')}>All</button>
+                    <Button variant={active !== "All" ? "outline" : "default"} className="rounded-full" onClick={() => setActive('All')}>All</Button>
                     {tags.map(t => (
-                        <button key={t} className={`badge ${active === t ? 'bg-primary-600/20 text-primary-200 border-primary-600/40' : ''}`} onClick={() => setActive(t)}>{t}</button>
+                        <Button key={t} className={`rounded-full`} variant={active === t ? "default" : "outline"} onClick={() => setActive(t)}>{t}</Button>
                     ))}
                 </div>
             </div>

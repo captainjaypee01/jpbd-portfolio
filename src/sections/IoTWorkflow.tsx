@@ -47,7 +47,7 @@ export function IoTWorkflow() {
     const vb = { w: 420, h: 160 }
     const xStart = 24
     const xEnd = vb.w - 24
-    const yCmd = 56   // outbound line (dashboard → device)
+    const yCmd = 48   // outbound line (dashboard → device)
     const yTele = 112 // inbound line (device → dashboard)
 
     useEffect(() => {
@@ -202,7 +202,7 @@ export function IoTWorkflow() {
                                 <line x1={xEnd} y1={yTele} x2={xStart} y2={yTele} stroke="currentColor" className="text-neutral-800" strokeWidth="2" />
 
                                 {/* Broker node (center) */}
-                                <g transform={`translate(${vb.w / 2 - 28}, ${vb.h / 2 - 22})`}>
+                                <g transform={`translate(${vb.w / 2 - 28}, ${vb.h / 2 - 22})`} className='mt-2'>
                                     <rect width="56" height="44" rx="10" className="fill-neutral-950 stroke-neutral-800" strokeWidth="2" />
                                     <Radio className="text-primary" width="20" height="20" x="18" y="12" />
                                 </g>

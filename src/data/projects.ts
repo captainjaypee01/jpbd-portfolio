@@ -16,7 +16,7 @@ export const projects: Project[] = [
         subtitle: 'Cloud-based real-time device analytics',
         description:
             'Real-time visualizations and device health monitoring with MQTT streams, FastAPI microservices, and a React + Vite dashboard. Zero-downtime deploys via Azure DevOps.',
-        tech: ['React', 'Vite', 'Tailwind', 'shadcn/ui', 'MQTT', 'FastAPI', 'Laravel', 'OpenAI'],
+        tech: ['React', 'Vite', 'Tailwind', 'shadcn/ui', 'MQTT', 'FastAPI', 'Laravel', 'OpenAI', 'MySQL'],
         type: 'IoT',
         links: { repo: GITHUB + '?tab=repositories' }
     },
@@ -25,7 +25,7 @@ export const projects: Project[] = [
         subtitle: 'End-to-end booking & payments',
         description:
             'Full-stack booking system with Laravel APIs and a React admin/guest UI. Clerk auth, email notifications, and online payments.',
-        tech: ['Laravel', 'React', 'Clerk', 'MySQL', 'Tailwind'],
+        tech: ['Laravel', 'React', 'Clerk', 'MySQL', 'Tailwind', 'Vite', 'shadcn/ui'],
         type: 'Web App',
         links: { repo: GITHUB + '?tab=repositories' }
     },
@@ -42,7 +42,7 @@ export const projects: Project[] = [
         subtitle: 'Asset tracking & dashboards',
         description:
             'Portal to track company assets, lifecycle events, and generate interactive dashboards to reduce manual reporting.',
-        tech: ['Laravel', 'React', 'Tailwind'],
+        tech: ['Laravel', 'React', 'Tailwind', 'MySQL'],
         type: 'Admin Portal'
     },
     {
@@ -50,7 +50,7 @@ export const projects: Project[] = [
         subtitle: 'Events, roles, and scheduling',
         description:
             'Role-based registration and management with secure APIs and intuitive React admin UI.',
-        tech: ['Laravel', 'React'],
+        tech: ['Laravel', 'React', 'MySQL'],
         type: 'Web App'
     }
 ]

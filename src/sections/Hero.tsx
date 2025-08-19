@@ -15,13 +15,11 @@ export function Hero() {
                 <div>
                     <p className="text-sm text-neutral-400">Hello, I am</p>
                     <h1 className="mt-2 text-4xl md:text-6xl font-bold tracking-tight">John Paul Dala</h1>
-                    <p className="mt-3 text-xl text-neutral-300">
 
-                        <TextEffect delay={0.4} per='char' preset='fade'>
-                            Senior Software Engineer — Full-Stack & IoT
-                        </TextEffect>
-                        {/* <Typewriter text="Senior Software Engineer — Full-Stack & IoT" /> */}
-                    </p>
+                    <TextEffect delay={0.4} per='char' preset='fade' className="mt-3 text-xl text-neutral-300">
+                        Senior Software Engineer — Full-Stack & IoT
+                    </TextEffect>
+                    {/* <Typewriter text="Senior Software Engineer — Full-Stack & IoT" /> */}
                     <p className="mt-5 text-neutral-300 max-w-prose">
                         Building robust web & IoT platforms with React, Laravel, and Python — and deploying securely to Azure with CI/CD.
                     </p>
