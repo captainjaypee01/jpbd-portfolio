@@ -181,8 +181,3 @@
 .skeleton {
   @apply animate-pulse rounded-md bg-neutral-800;
 }
-
-/* Ring focus */
-.focus-ring {
-  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-950;
-}

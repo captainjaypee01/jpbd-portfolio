@@ -1,6 +1,7 @@
 import { skills } from '@/data/skills'
 import { useMemo, useState } from 'react'
 import { Progress } from '@/components/ui/progress'
+import { Button } from '@/components/ui/button'
 
 const cats = ['Frontend', 'Backend & API', 'Cloud & Infrastructure', 'DevOps & Tools', 'AI & Data'] as const
 
@@ -15,7 +16,7 @@ export function Skills() {
                 <h2 className="text-2xl font-semibold">Skills</h2>
                 <div className="flex flex-wrap gap-2">
                     {(cats as readonly string[]).map(c => (
-                        <button key={c} onClick={() => setActive(c as Cat)} className={`badge ${active === c ? 'bg-primary-600/20 text-primary-200 border-primary-600/40' : 'hover:bg-neutral-700/60'}`}>{c}</button>
+                        <Button key={c} onClick={() => setActive(c as Cat)} className={`rounded-full`} variant={active === c ? "default" : "outline"} >{c}</Button>
                     ))}
                 </div>
             </div>
